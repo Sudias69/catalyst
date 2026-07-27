@@ -847,6 +847,12 @@ button.faq-ctrl{
     flex-direction: column;
     gap: 12px;
 }
+.faq-answer{
+    padding: 0 24px 22px 24px;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
 .faq-list-item{
     background: var(--surface);
     border: 1px solid var(--border);
@@ -882,16 +888,6 @@ button.faq-ctrl{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.faq-list-item button span {
-  transition: transform 0.3s;
-}
-.faq-list-item button:not(.collapsed) span {
-  transform: rotate(45deg);
-  background: var(--accent);
-}
-.card-body{
-    font-size: 14px;
 }
 section.banner{
     padding: var(--section-pad) 0;
