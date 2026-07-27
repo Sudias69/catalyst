@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <header>
+        <div class="menu"><div id="logo"><div class="logo-icon"><i class="fa-solid fa-caret-left"></i></div><a href="#hero">Catalyst</a></div>
+        <div id="menu">
+            <nav><ul>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#engine">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul></nav>
+        </div>
+        <div id="buttons">
+            <div class="login"><a href="">Log in</a></div>
+            <div class="signup"><a href="">Start Free</a></div>
+        </div>
+    <i class="fa-solid fa-bars"></i></div>
+    </header>
+    <main>
+        <div id="hero"><section  class="hero">
+            <div class="container">
+            <div class="hero-badge"><span class="hero-badge-dot"></span>v4.2--Now with real time sync</div>
+            <h1 class="hero-heading">
+            The analytic platform build for <span class="accent-word">speed</span>
+            </h1>
+            <p class="hero-para">
+               Stop waiting for insights. Catalyst delivers sub-second queries across billions of rows so your team ships decisions, not dashboards. 
+            </p>
+            <div class="hero-actions">
+            <div class="signup btn-action"><a href="">Start Free Trial<i class="fa-solid fa-arrow-right"></i></a></div>
+            <div class="login btn-action1"><a href="">Watch Demo</a></div>
+            </div>
+            <div class="hero-dashboard">
+            <div class="dashboard">
+            <div class="dashboard-toolbar">
+            <div class="tool-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="tool-menu">
+            <span class="active">Overview</span>
+            <span>Funnels</span>
+            <span>Retentions</span>
+            <span>Revenue</span>
+            </div>
+            <div style="width: 50px;"></div>
+            </div>
+            <div class="dashboard-body">
+            <div class="dashboard-card">
+            <p class="label">Total Revenue</p>
+            <h2 class="value">$2.4M</h2>
+            <p class="sublabel"><i class="fa-solid fa-arrow-up"></i>+18.2%</p>
+            </div>
+            <div class="dashboard-card">
+                <p class="label">Active user</p>
+            <h2 class="value">48,291</h2>
+            <p class="sublabel"><i class="fa-solid fa-arrow-up"></i>+7.4%</p>
+            </div>
+            <div class="dashboard-card">
+                <p class="label">Average Query Time</p>
+            <h2 class="value">42Ms</h2>
+            <p class="sublabel"><i class="fa-solid fa-arrow-down"></i>-23.2%</p>
+            </div>
+            <div class="dashboard-table">
+                <div class="ds-table-head">
+                    <p>Recent Pipelines</p>
+                    <p class="filter">ALL items<i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="ds-table-body">
+                    <div class="dash-body-head">
+                    <p class="dash-cell">Pipeline</p>
+                    <p class="dash-cell">Eventes / hr</p>
+                    <p class="dash-cell">Latency</p>
+                    <p class="dash-cell cell-status">Uptime</p>
+                    <p class="dash-cell cell-status">Status</p>
+                    </div>
+                    <div class="dash-table-row">
+                        <p class="das-cell dash-cell-name"><span>P1</span>Checkout Funnel</p>
+                        <p class="das-cell">1.2M</p>
+                        <p class="das-cell">42ms</p>
+                        <p class="das-cell cell-status">99.8%</p>
+                        <p class="das-cell"><span class="dash-status-activity">Active</span></p>
+                    </div>
+                    <div class="dash-table-row">
+                        <p class="das-cell dash-cell-name"><span style="color: #92400E; background: #FEF3C7;">P2</span>User Onboarding</p>
+                        <p class="das-cell">1.2M</p>
+                        <p class="das-cell">42ms</p>
+                        <p class="das-cell cell-status">99.8%</p>
+                        <p class="das-cell"><span class="dash-status-activity" style="color: #92400E; background: #FEF3C7;">Pending</span></p>
+                    </div>
+                    <div class="dash-table-row">
+                        <p class="das-cell dash-cell-name"><span style="background: var(--surface);
+                          color: var(--text-muted);" >P3</span>Revenue Tracker</p>
+                        <p class="das-cell">1.2M</p>
+                        <p class="das-cell">42ms</p>
+                        <p class="das-cell cell-status">99.8%</p>
+                        <p class="das-cell"><span class="dash-status-activity">Active</span></p>
+                    </div>
+                    <div class="dash-table-row">
+                        <p class="das-cell dash-cell-name"><span style="background: #E0E7FF;color: #3730A3;">P4</span>A/B Experiments</p>
+                        <p class="das-cell">1.2M</p>
+                        <p class="das-cell">42ms</p>
+                        <p class="das-cell cell-status">99.8%</p>
+                        <p class="das-cell"><span class="dash-status-activity">Active</span></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section></div>
+        <div id="performance"><section class="depth">
+           <div class="container">
+            <p class="depth-title">
+                PERFORMANCE THAT SPEAKS FOR ITSELf
+            </p>
+            <div class="depth-grid">
+                <div class="depth-grid-item">
+                <p class="item-heading">
+                    <span class="depth-highlight">42</span><span class="unit">ms</span>
+                </p>
+                <p class="item-explain">Average query response time across 10B+ row datasets</p>
+                </div>
+                <div class="depth-grid-item">
+                    <p class="item-heading">
+                    999.9<span class="unit">%</span>
+                </p>
+                <p class="item-explain">Guaranteed uptime SLA for all enterprise customers</p>
+                </div>
+                <div class="depth-grid-item"><p class="item-heading">
+                    10<span class="unit">x</span>
+                </p>
+                <p class="item-explain">Faster than legacy warehouses at one-tenth the cost</p></div>
+            </div>
+           </div> 
+        </section></div>
+        <div id="engine"><section class="engine">
+            <div class="container">
+                <div class="engine-header">
+                    <div class="engine-title">The engine</div>
+                    <div class="engine-subheading">Everything your data team actually needs</div>
+                </div>
+                <div class="engine-grid">
+                    <div class="grid-card">
+                     <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>  
+                     <h3>Real Time Analyst</h3> 
+                     <p>Stream, transform, and visualize data the instant it arrives. No batching, no waiting, no stale dashboards</p>
+                     <div class="grid-card-highlight">
+                        <div class="grid-graph">
+                            <div class="mini-bars" style="height: 35% ;"></div>
+                            <div class="mini-bars" style="height: 55%;"></div>
+                            <div class="mini-bars" style="height: 40%;"></div>
+                            <div class="mini-bars bar-active" style="height: 80% ;  background: var(--accent);"></div>
+                            <div class="mini-bars" style="height:60% ;"></div>
+                            <div class="mini-bars" style="height: 45% ;"></div>
+                            <div class="mini-bars bar-active" style="height: 95% ; background: var(--accent);"></div>
+                            <div class="mini-bars" style="height: 70%;"></div>
+                            <div class="mini-bars" style="height: 50%;"></div>
+                            <div class="mini-bars" style="height: 65%;"></div>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="grid-card">
+                     <div class="card-icon"><i class="fa-solid fa-display"></i></div>  
+                     <h3>Pipeline Orchestration</h3> 
+                     <p>Build fault-tolerant data pipelines with visual drag-and-drop. Auto-retry, dead-letter queues, and full observability built in</p>
+                     <div class="grid-card-highlight">
+                        <div class="grid-buttons">
+                           <span class="btn-active">Ingest</span>
+                           <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                           <span class="btn-disable">Transform</span>
+                           <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                           <span class="btn">Deliever</span>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="grid-card">
+                     <div class="card-icon"><i class="fa-solid fa-code"></i></div>  
+                     <h3>SQL-First Interface</h3> 
+                     <p>Write standard SQL against any source. Auto-completion, version control, and collaborative editing come standard.</p>
+                     <div class="grid-card-highlight">
+                        <div class="grid-code">
+                           <pre> <strong>SELECT</strong> user_id, COUNT(*)
+ <strong>FROM </strong>events
+ <strong>WHERE</strong> ts > '2026-01'
+ <strong>GROUP BY </strong>1 -- 42ms ⚡</pre>
+                        </div>
+                     </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section></div>
+        <div id="pricing"><section class="pricing">
+         <div class="container">
+            <div class="pricing-header">
+                    <div class="pricing-title">pricing</div>
+                    <div class="pricing-subheading">Simple, transparent pricing</div>
+                </div>
+                <div class="pricing-btns">
+                    <div class="acti-dis-btns">
+                     <button class="disa">Monthly</button>   
+                     <button class="acti">Yearly</button>   
+                    </div>
+                    <span class="save">save25%</span>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                      <p class="plan-name">Starter</p>  
+                      <p class="plan-title">For small teams getting started</p>
+                      <p class="ammount">
+                        <span class="currency">$</span>
+                        <span class="value">22</span>
+                      </p>
+                      <p class="pricing-duration">per user/month</p>
+                      <P class="pricing-bill">$255 Billed annually</P>
+                      <button>Get Started</button>
+                      <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i>Up to 5 team members</li>
+                        <li><i class="fa-solid fa-check"></i>1 billion events / month</li>
+                        <li><i class="fa-solid fa-check"></i>7-day data retention</li>
+                        <li><i class="fa-solid fa-check"></i>Community support</li>
+                      </ul>
+                    </div>
+                    <div class="pricing-card pricing-feature">
+                      <p class="plan-name">Pro</p>  
+                      <p class="plan-title">For scaling data teams</p>
+                      <p class="ammount">
+                        <span class="currency">$</span>
+                        <span class="value">75</span>
+                      </p>
+                      <p class="pricing-duration">per user / month</p>
+                      <P class="pricing-bill">$255 Billed annually</P>
+                      <button class="active">Get Started</button>
+                      <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i>Unlimited team members</li>
+                        <li><i class="fa-solid fa-check"></i>50 billion events / month</li>
+                        <li><i class="fa-solid fa-check"></i>Unlimited data retention</li>
+                        <li><i class="fa-solid fa-check"></i>Priority support + SLA</li>
+                        <li><i class="fa-solid fa-check"></i>SSO & audit logs</li>
+                      </ul>
+                    </div>
+                    <div class="pricing-card">
+                      <p class="plan-name">Enterprise</p>  
+                      <p class="plan-title">For mission-critical deployments</p>
+                      <p class="ammount">
+                        <span class="currency">$</span>
+                        <span class="value">370</span>
+                      </p>
+                      <p class="pricing-duration">Start by / month</p>
+                      <P class="pricing-bill">$255 Billed annually</P>
+                      <button>Get Started</button>
+                      <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i>Up to 5 team members</li>
+                        <li><i class="fa-solid fa-check"></i>1 billion events / month</li>
+                        <li><i class="fa-solid fa-check"></i>7-day data retention</li>
+                        <li><i class="fa-solid fa-check"></i>Community support</li>
+                      </ul>
+                    </div>
+                </div>
+             </div>  
+        </section></div>
+        <div id="faq"><section class="faq">
+            <div class="container">
+               <div class="engine-header">
+                    <div class="engine-title">faq</div>
+                    <div class="engine-subheading">Common questions, straight answers</div>
+                </div> 
+                <div class="faq-contrls">
+                    <button class="faq-ctrl">Expand All</button>
+                    <button class="faq-ctrl">Collapse All</button>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-list-item">
+                        <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#demo1">How long does the free trial last?<span ><i class="fa-solid fa-plus"></i></span>
+                        
+                        </button>
+                        <div class="collapse text-muted " id="demo1">
+                            <div class=" card-body pt-0">
+                           Every plan includes a 14-day free trial with full access to all features. No credit card required to get started. At the end of the trial, you can choose a plan or export your data.
+                        </div></div>
+                        
+                    </div>
+                    <div class="faq-list-item">
+                        <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#demo2">Can I switch plan?<span><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="collapse text-muted " id="demo2">
+                            <div class=" card-body pt-0">
+                           Yes. Upgrade or downgrade any time from your account settings. When upgrading, you only pay the prorated difference. When downgrading, the remaining balance is applied as credit toward future invoices.
+                        </div></div>
+                    </div>
+                    <div class="faq-list-item">
+                        <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#demo3">What data sources do you support?<span><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="collapse text-muted " id="demo3">
+                            <div class=" card-body pt-0">
+                           Catalyst connects to 50+ data sources out of the box, including PostgreSQL, MySQL, BigQuery, Snowflake, Redshift, S3, Kafka, and most popular REST APIs. Custom connectors are available on the Enterprise plan.
+                        </div></div>
+                    </div>
+                    <div class="faq-list-item">
+                        <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#demo4">Is my data secure?<span ><i class="fa-solid fa-plus " ></i>
+                       </span> </button>
+                       <div class="collapse text-muted " id="demo4">
+                            <div class=" card-body pt-0">
+                           Absolutely. All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We are SOC 2 Type II certified and GDPR compliant. Enterprise customers also get dedicated infrastructure with VPC peering and custom encryption keys.
+                        </div></div>
+                    </div>
+                    <div class="faq-list-item">
+                        <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#demo5">Do you onboarding support?<span><i class="fa-solid fa-plus"></i></span></button>
+                        <div class="collapse text-muted " id="demo5">
+                            <div class=" card-body pt-0">
+                           Pro customers get access to our onboarding team for the first 30 days. Enterprise customers receive a dedicated solutions engineer for the full implementation. All plans include access to our docs, tutorials, and community forum.
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section></div>
+        <section class="banner">
+            <div class="container">
+                <div class="inner-banner">
+                      <div class="engine-header">
+                    <div class="engine-title banner-title">Get started today</div>
+                    <div class="engine-subheading banner-subtitle">Ready to accelerate your data?</div>
+                    <p class="subpara">Join 2,000+ teams shipping faster with sub-second analytics. Free for 14 days.</p>
+                </div> 
+                <div class="hero-actions banner-actions">
+            <div class="signup btn-action"><a href="">Start Free Trial<i class="fa-solid fa-arrow-right"></i></a></div>
+            <div class=" btn-gost "><a href="">Talk to Sales</a></div>
+            </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+          <div class="inner-footer">
+            <div class="foot1">
+               <div id="logo"><div class="logo-icon"><i class="fa-solid fa-caret-left"></i></div><a href="">Catalyst</a></div>
+               <p>The analytics platform built for speed. Sub-second queries, real-time pipelines, and infinite scale</p>
+
+            </div>
+            <div class="foot2">
+                <h4>RESOURCES</h4>
+                <ul class="footer-links">
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">API reference</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Live</a></li>
+                </ul>
+            </div>
+            <div class="foot3">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Community Forum</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">System Status</a></li>
+                    
+                </ul>
+            </div>
+            <div class="foot4">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="">Twitter / X</a></li>
+                   
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+          </div> 
+          <div class="lower-footer">
+            <p class="left">© 2026 Catalyst Inc. All rights reserved. Design: <a href="">Templatemo</a></p>
+          
+          <ul>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Cookies</a></li>
+          </ul> 
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
